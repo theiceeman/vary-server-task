@@ -25,7 +25,7 @@ Route.group(() => {
 
 Route.group(() => {
   Route.post('/create', 'BookService.create')
-  Route.get('/view', 'BookService.view')
+  Route.get('/view/:page/:limit', 'BookService.view')
 }).prefix('/books')
 
 
